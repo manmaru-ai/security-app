@@ -1,5 +1,9 @@
 # SecureApp - 企業レベルセキュリティ対応Next.jsアプリケーション
 
+
+https://github.com/user-attachments/assets/57965f41-383b-40ce-b025-cf8bf91e3cc0
+
+
 [![Security](https://img.shields.io/badge/Security-A%2B-brightgreen.svg)]()
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.2-blue.svg)]()
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)]()
