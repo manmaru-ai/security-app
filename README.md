@@ -10,13 +10,13 @@
 
 SecureAppは、**ガチガチにセキュアな設計**で構築された企業レベルのセキュリティ機能を備えたNext.jsアプリケーションです。ロールベースアクセス制御（RBAC）、高度なセッション管理、多層防御によるセキュリティ対策を実装しています。
 
-![アプリケーション概要](https://via.placeholder.com/800x400/4F46E5/FFFFFF?text=SecureApp+Overview)
+
 
 > **注意**: このアプリケーションは教育・学習目的で作成されており、実際のセキュリティベストプラクティスを学ぶためのサンプルです。
 
 ##  実装済みセキュリティ機能
 
-![セキュリティダッシュボード](https://via.placeholder.com/800x500/10B981/FFFFFF?text=Security+Dashboard)
+
 
 ### 1. ロールベースアクセス制御（RBAC）
 - **管理者（Admin）**: 全機能へのアクセス権限・ユーザー管理
@@ -29,7 +29,7 @@ SecureAppは、**ガチガチにセキュアな設計**で構築された企業�
 - APIレベルでの権限チェック
 
 ### 2. 高度なセッション管理
-![セッション管理画面](https://via.placeholder.com/800x500/3B82F6/FFFFFF?text=Session+Management)
+
 
 - **マルチデバイス対応**: 複数端末からの同時ログイン管理
 - **端末情報詳細表示**: OS、ブラウザ、IPアドレス、最終アクティビティ
@@ -65,7 +65,7 @@ Strict-Transport-Security: max-age=31536000; includeSubDomains
 
 ## セットアップと起動
 
-![セットアップ手順](https://via.placeholder.com/800x400/EF4444/FFFFFF?text=Setup+Instructions)
+
 
 ### 1. 依存関係のインストール
 
