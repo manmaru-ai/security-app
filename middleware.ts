@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifySessionToken } from './lib/jwt';
 
 // 認証が不要なパス
-const publicPaths = ['/', '/login', '/signup', '/api/auth/login', '/api/auth/signup', '/api/auth/check-email'];
+const publicPaths = ['/','/login', '/signup', '/api/auth/login', '/api/auth/signup', '/api/auth/check-email'];
 
 // 管理者専用パス
 const adminPaths = ['/admin'];
@@ -43,7 +43,12 @@ export async function middleware(request: NextRequest) {
   response.headers.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
 
   // 認証が不要なパスの場合はそのまま通す
-  if (publicPaths.some(path => pathname.startsWith(path))) {
+  if (publicPaths.some(path => {
+    if (path === '/') {
+      return pathname === '/'; // トップページは完全一致のみ
+    }
+    return pathname.startsWith(path);
+  })) {
     return response;
   }
 
