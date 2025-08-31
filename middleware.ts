@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { verifySessionToken } from './lib/jwt';
 
 // 認証が不要なパス
-const publicPaths = ['/login', '/signup', '/api/auth/login', '/api/auth/signup', '/api/auth/check-email'];
+const publicPaths = ['/', '/login', '/signup', '/api/auth/login', '/api/auth/signup', '/api/auth/check-email'];
 
 // 管理者専用パス
 const adminPaths = ['/admin'];
